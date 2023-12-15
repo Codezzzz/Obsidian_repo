@@ -1,3 +1,11 @@
 [
-  "obsidian-git"
+  "obsidian-git",
+  "calendar",
+  "table-editor-obsidian",
+  "obsidian-table-generator",
+  "periodic-notes",
+  "obsidian-plugin-prettier",
+  "obsidian-tasks-plugin",
+  "cm-editor-syntax-highlight-obsidian",
+  "code-emitter"
 ]
