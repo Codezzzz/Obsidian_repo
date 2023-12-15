@@ -1,0 +1,4 @@
+
+```javascript 
+text.normalize()
+```
