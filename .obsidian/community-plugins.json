@@ -7,5 +7,7 @@
   "obsidian-plugin-prettier",
   "obsidian-tasks-plugin",
   "cm-editor-syntax-highlight-obsidian",
-  "code-emitter"
+  "code-emitter",
+  "obsidian-excalidraw-plugin",
+  "drawio-obsidian"
 ]

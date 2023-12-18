@@ -11,8 +11,7 @@ function wrapPromise<T>(promise: Promise<T>): () => T {
       status = "success"
 
       response = res
-    },
-
+    },![[personal/저장/Untitled Diagram.svg]]
     (err) => {
       status = "error"
 
