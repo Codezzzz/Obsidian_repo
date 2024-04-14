@@ -1,1 +1,11 @@
-{}
+{
+  "obsidian-plugin-prettier:format-note": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "command-palette:open": []
+}
