@@ -14,3 +14,8 @@ docker rmi -f $(docker images -a -q)
 
 docker rm $(docker ps -a -q -f status=exited)
 
+
+
+
+docker pull gensunny-registry.ncr.gov-ntruss.com/gensunny-as:latest
+docker run 
