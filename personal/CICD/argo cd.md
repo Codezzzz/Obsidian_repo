@@ -12,4 +12,10 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath=``"{.data.p
 ```
 
 
-argocd repo add https://github.com/Codezzzz/wise-ui.git --username codezzzz --password 486dy4dy!
+argocd repo add https://github.com/Codezzzz/wise-ui.git --username codezzzz --password 486dy4dy
+
+
+argocd repo add git@gitlab.wisenut.kr:saas/gensunny/gensunny-k8s.git --ssh-private-key-path ~/.ssh/argo_rsa
+
+
+argocd repo add --insecure-skip-server-verification git@gitlab.wisenut.kr:saas/gensunny/gensunny-k8s.git
