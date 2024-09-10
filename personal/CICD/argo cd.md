@@ -10,3 +10,6 @@ kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/s
 ```sh
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath=``"{.data.password}" | base64 -d; echo
 ```
+
+
+argocd repo add https://github.com/Codezzzz/wise-ui.git --username codezzzz --password 486dy4dy!
