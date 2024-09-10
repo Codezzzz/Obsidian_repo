@@ -19,3 +19,9 @@ argocd repo add git@gitlab.wisenut.kr:saas/gensunny/gensunny-k8s.git --ssh-priva
 
 
 argocd repo add --insecure-skip-server-verification git@gitlab.wisenut.kr:saas/gensunny/gensunny-k8s.git
+
+
+ssh-keyscan gitlab.wisenut.kr | argocd cert add-ssh --batch
+
+
+argocd repo add git@github.com:argoproj/argocd-example-apps.git --ssh-private-key-path ~/.ssh/id_rsa
