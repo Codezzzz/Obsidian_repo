@@ -1,5 +1,5 @@
 https://github.com/pmndrs/zustand/issues/128
-
+https://github.com/pmndrs/zustand/blob/main/docs/guides/initialize-state-with-props.md
 
 ## using contextapi
 
