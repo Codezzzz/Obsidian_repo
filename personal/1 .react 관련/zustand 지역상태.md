@@ -68,3 +68,4 @@ const createCounterStore = () => create<CounterStoreState>(
 // First is the React Context provider to wrap your components in, second is the hook to directly access the store
 const [ CounterStoreProvider, useCounterStore ] = createStoreContext(createCounterStore)
 ```
+
