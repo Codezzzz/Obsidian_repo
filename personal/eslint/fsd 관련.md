@@ -1,0 +1,1 @@
+https://github.com/effozen/eslint-plugin-fsd-lint
