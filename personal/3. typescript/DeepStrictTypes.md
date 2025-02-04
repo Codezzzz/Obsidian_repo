@@ -1,0 +1,1 @@
+https://github.com/kakasoo/deepstricttypes#readme
