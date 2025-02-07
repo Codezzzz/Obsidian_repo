@@ -107,6 +107,8 @@ export const createTypedRouterUtils = <T extends Record<string, string>>(routeMa
 ```
 
 
+https://github.com/fredericoo/react-router-typesafe
+
 ```tsx
 import { createBrowserRouter, RouteObject } from 'react-router-dom';
 
