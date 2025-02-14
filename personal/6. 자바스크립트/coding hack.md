@@ -1,0 +1,1 @@
+https://javascript.plainenglish.io/15-excellent-javascript-coding-hacks-54f67c71629c
