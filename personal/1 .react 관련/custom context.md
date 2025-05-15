@@ -22,9 +22,9 @@ function createSplitContextWithActions<
     return ctx;
   }
 
-  function createProvider() {
-    return function Provider({ children }: { children: React.ReactNode }) {
-      const [state, setState] = React.useState(initialState);
+  
+   function Provider({ children, providedState }: { children: React.ReactNode , providedState?: S }) {
+      const [state, setState] = React.useState<S>(providedState ?? initialState!);
 
       const actions = React.useMemo(() => createActions(setState), []);
 
@@ -35,13 +35,11 @@ function createSplitContextWithActions<
           </ActionsContext.Provider>
         </StateContext.Provider>
       );
-    };
-  }
+    }
 
-  
 
   return {
-    createProvider,
+    Provider,
     useStateContext,
     useActionsContext,
   };
@@ -49,7 +47,7 @@ function createSplitContextWithActions<
 
 
   const {
-    createProvider,
+    Provider,
     useStateContext: useTheme,
     useActionsContext: useThemeActions,
   } = createSplitContextWithActions('light' as 'light' | 'dark', (set) => ({
@@ -57,6 +55,4 @@ function createSplitContextWithActions<
     setLight: () => set('light'),
     setDark: () => set('dark'),
   }));
-  
-
 ```
