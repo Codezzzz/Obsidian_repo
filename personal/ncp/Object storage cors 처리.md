@@ -96,10 +96,44 @@ ncp 오브젝트 스토리지의 경우, 버킷 상태 수정 web ui를 제공�
 ### AWS CLI 명령어
 
 ```
-`
+# 버킷 목록 조회
+aws --profile ncp-gov --endpoint-url=https://kr.object.gov-ncloudstorage.com s3 ls
+
+# 버킷 내 객체 목록 조회
+aws --profile ncp-gov --endpoint-url=https://kr.object.gov-ncloudstorage.com s3 ls s3://gensunny-obst-document
+
+# 파일 업로드
+aws --profile ncp-gov --endpoint-url=https://kr.object.gov-ncloudstorage.com s3 cp file.txt s3://gensunny-obst-document/
+
+# 파일 다운로드
+aws --profile ncp-gov --endpoint-url=https://kr.object.gov-ncloudstorage.com s3 cp s3://gensunny-obst-document/file.txt ./
+
+# CORS 설정 조회
+aws --profile ncp-gov --endpoint-url=https://kr.object.gov-ncloudstorage.com s3api get-bucket-cors --bucket gensunny-obst-document
+
+```
 ### s3cmd 명령어
 
-`# 버킷 목록 조회 s3cmd ls # 버킷 내 객체 목록 조회 s3cmd ls s3://gensunny-obst-document # 파일 업로드 s3cmd put file.txt s3://gensunny-obst-document/ # 파일 다운로드 s3cmd get s3://gensunny-obst-document/file.txt # CORS 설정 조회 s3cmd getcors s3://gensunny-obst-document # CORS 설정 적용 s3cmd setcors cors.xml s3://gensunny-obst-document`
+```
+# 버킷 목록 조회
+s3cmd ls
+
+# 버킷 내 객체 목록 조회
+s3cmd ls s3://gensunny-obst-document
+
+# 파일 업로드
+s3cmd put file.txt s3://gensunny-obst-document/
+
+# 파일 다운로드
+s3cmd get s3://gensunny-obst-document/file.txt
+
+# CORS 설정 조회
+s3cmd getcors s3://gensunny-obst-document
+
+# CORS 설정 적용
+s3cmd setcors cors.xml s3://gensunny-obst-document
+
+```
 
 ## 중요 사항
 
